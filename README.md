@@ -1,6 +1,7 @@
 # SFA Challenge - SWISS FEDERAL ARCHIVES GEO UNPLUGGED
 
 [![Build Status](https://www.sixxt.com/bar/passing.svg?branch=master)](https://sixxt.com/bar/passing)
+LINK TO THE POC: https://www.sixxt.com/bar/
 
 The GEO Unplugged Submission was created with the purpose in mind to access the SFA data catalog via regions versus the current country filter. The SFA filter currently in place makes it complex and slow to search for files related to a certain region or multiple countries.
 
