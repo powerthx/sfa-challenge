@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="b2c6a8b3-0aa3-484b-a284-b9b2ddf0c12a" activeEnvironment="Default" name="REST Project 1" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="3f6d296b-c95d-453c-80d1-2c6c360c9a6a" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://www.recherche.bar.admin.ch" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://www.recherche.bar.admin.ch</con:endpoint></con:endpoints><con:resource name="Search" path="/recherche/api/v1/entities/21684481" id="15970f4e-866e-45b7-8876-967163301f30"><con:settings/><con:parameters/><con:method name="Search 1" id="4457fd03-b9b5-4985-ab31-83be35a12cbc" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:sear="https://www.recherche.bar.admin.ch/recherche/api/v1/entities/Search">sear:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:sear="https://www.recherche.bar.admin.ch/recherche/api/v1/entities/Search">sear:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" id="be2acc96-00b8-4994-9ebb-956dd7df5ae1" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"/>
+  &lt;con:entry key="content-type" value="application/json; charset=utf-8"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://www.recherche.bar.admin.ch</con:endpoint><con:request>{
+ "query": {
+ "searchGroups": [
+ {
+ "searchFields": [
+ {
+ "value": "",
+ "ids": "21684481",
+ "key": "allData"
+ }
+ ],
+ "fieldOperator": 1
+ }
+ ], 
+ "groupOperator": 1
+ }
+}</con:request><con:originalUri>https://www.recherche.bar.admin.ch/recherche/api/v1/entities/Search</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request><con:request name="Pic" id="10db7a02-e2c5-42cc-9c40-ebbdd6b0027f" mediaType="application/json"><con:settings/><con:endpoint>https://www.recherche.bar.admin.ch</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="5d4e234e-80eb-4102-91ce-c4c4d0b11cbb" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Project 1" type="rest" definitionUrl="land" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints/></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
